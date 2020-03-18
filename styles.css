@@ -22,7 +22,6 @@ ul {
   position: fixed;
   top: 0px;
   left: 0px;
-  width: 100%;
   height: 55px;
   background-color: #FFF;
   z-index: 1;
@@ -31,14 +30,6 @@ ul {
 .nav-item {
   float: left;
   height: 100%;
-}
-a:hover {
-  background-color: rgb(0,150,214, 0.4);
-  cursor: pointer;
-}
-
-.active {
-  background-color: rgb(0, 150, 214);
 }
 
 a {
@@ -50,11 +41,18 @@ a {
   text-decoration: none;
 }
 
+.active {
+  background-color: rgb(0, 150, 214);
+}
+
+a:hover {
+  background-color: rgb(0,150,214, 0.4);
+  cursor: pointer;
+}
+
 #searchbar {
   display: block;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   position: relative;
   top: 120px;
 }
@@ -84,7 +82,7 @@ a {
 
 #news-page{
   position: relative;
-  top: 180px;
+  top: 120px;
   width: 900px;
   margin: auto;
   display: block;
@@ -94,58 +92,54 @@ h1 {
   text-align: left;
 }
 
-#pc1 {
-  width: 100%;
-  z-index: -1;
+#top-half {
+  background-image: url("https://www8.hp.com/us/en/images/DRX_banner_2_tcm245_3018346_tcm245_2886054_tcm245-3018346.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0px 10px 1px 0px;
+  color: white;
+  font-size: 13px;
+}
+
+#bottom-half {
+  background-image: url("https://www8.hp.com/us/en/images/DRX_banner_tcm245_3018424_tcm245_2886054_tcm245-3018424.png");
+  background-size: cover;
+  padding: 0px 0px 0px 15px;
+  color: white;
+  font-size: 13px;
 }
 
 #nvidia {
   width: 149px;
   height: 54px;
-  position: relative;
-  bottom: 580px;
-  left: 500px;
-}
-
-#nvidia-text {
-  color: white;
-  font-size: 13px;
-  position: relative;
-  bottom: 585px;
-  left: 510px;
 }
 
 #i9 {
   width: 60px;
   height: 60px;
-  position: relative;
-  bottom: 590px;
-  left: 510px;
 }
 
 #i9-header {
-  color: white;
   font-size: 16px;
   position: relative;
-  bottom: 635px;
-  left: 590px;
+  bottom: 40px;
+  left: 80px;
 }
 
 #i9-text{
   color: white;
   font-size: 13px;
   position: relative;
-  bottom: 610px;
-  left: 510px;
+  bottom: 10px;
 }
 
 #ssd-block {
   display: flex;
-  color: white;
-  font-size: 13px;
+  flex-direction: column;
   position: relative;
-  bottom: 550px;
-  left: 20px;
+  top: 30px;
 }
 
 #ssd {
@@ -155,23 +149,20 @@ h1 {
 
 #ssd-header {
   position: relative;
-  top: 10px;
-  left: 20px;
+  bottom: 45px;
+  left: 60px;
 }
 
 #ssd-text {
   position: relative;
-  top: 60px;
-  right: 290px;
+  bottom: 30px;
 }
 
 #ddr4-block {
   display: flex;
-  color: white;
-  font-size: 13px;
+  flex-direction: column;
   position: relative;
-  bottom: 480px;
-  left: 10px;
+  top: 10px;
 }
 
 #ddr4 {
@@ -181,48 +172,52 @@ h1 {
 
 #ddr4-header {
   position: relative;
-  bottom: 6px;
-  left: 20px;
+  bottom: 28px;
+  left: 80px;
 }
 
 #ddr4-text {
   position: relative;
-  top: 35px;
-  right: 205px;
+  bottom: 30px;
 }
 
 #reviews {
-  position: absolute;
-  bottom: 20px;
-  left: 190px;
+  position: relative;
+  top: 70px;
+  text-align: center;
 }
 
-#contacts {
-  position: relative;
-  top: 200px;
-  height: 180px;
-  right: 0px;
-  padding: 60px 0px 0px 0px;
-  width: 100%;
+footer {
+  position: relative; 
+  top: 250px;
+  height: 175px;
   background: rgb(133, 95, 0, 0.2);
 }
 
+#contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100%;
+  width: 100%;
+}
+
 #contact-header {
-  float: right;
   position: relative;
-  right: 500px;
-  bottom: 50px;
+  right: 225px;
+  top: 10px;
+  font-weight: bold;
 }
 
 #contact-list {
   position: relative;
-  right: 215px;
-  bottom: 10px;
+  right: 20px;
 }
 
 #copyright {
-  float: left;
+  display: flex;
+  align-self: flex-start;
   position: relative;
+  bottom: 40px;
   left: 10px;
-  top: 90px;
 }
